@@ -1,28 +1,28 @@
-/* Styling Box */
-.box{
+/* styling box */
+body {
     margin-left: 50px;
 }
 
-.box{
+.box {
     width: 250px;
-    height: 400px;
+    height: 600px;
     border: 1px solid black;
     float: left;
     margin: 20px;
 }
-.red{
-    background-color: red;
 
-  
+.red {
+    background-color: red;
 }
 
-.yellow{
+.yellow {
     background-color: yellow;
 }
-.green{
-    background-color: green;
+
+.green {
+    background-color: rgb(148, 240, 10);
 }
 
-.blue{
-   background-color: blue;
+.blue {
+    background-color: blue;
 }
