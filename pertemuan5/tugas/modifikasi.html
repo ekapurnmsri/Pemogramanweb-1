@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="styles.css">
+    
+  
+        <style>
+            .container {
+                background-color: #a67c52;
+                padding: 30px;
+                max-width: 900px;
+                margin: 5px auto;  
+            
+            }
+
+            .item {
+                position: relative;
+                width: 30%;
+            }
+
+            .item h1 {
+                font-size: 1.2em;
+                font-weight: bold;
+                margin: 0;
+            }
+
+            .item p {
+                font-size: 0.9em;
+                margin: 8px 0 0 0;
+            }
+
+            .item p span {
+                font-weight: bold;
+                font-style: italic;
+            }
+
+            .item:before {
+                content: '';
+                position: absolute;
+                top: 0%;
+                left: -25px;
+                width: 20px;
+                height: 20px;
+                background-color: #a67c52;
+                border: 2px solid white;
+                border-radius: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 0.8em;
+                font-weight: bold;
+            }
+
+           .item:nth-child(1):before {
+                content: '1';
+            }
+
+           .item:nth-child(2):before {
+                 content: '2';
+            }
+
+            .item:nth-child(3):before {
+                content: '3';
+            }
+
+            .item:nth-child(4):before {
+                content: '4';
+            }
+
+
+            .table {
+                width: 200%;
+                margin: auto;
+                border-collapse: collapse;
+                text-align: center;
+                font-family: Arial, sans-serif;
+            }
+
+            .th, td {
+                padding: 5px;
+                border: 1px solid #d0e8f2;
+            }
+
+            thead {
+                background-color: #87c6ed;
+            }
+
+            tbody tr:nth-child(odd) {
+                background-color: #d0e8f2;
+            }
+
+            tbody tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+
+            th {
+                font-weight: bold;
+            }
+
+            table {
+                transform: translateY(300px);
+                width: 100%;
+            }
+
+        </style>
+
+    <div class="container">
+        <div class="item">
+            <h1>Vitamin E</h1>
+            <p>Memiliki <span>anti aging</span> yang bisa mendorong perawatan kulit alami</p>
+            <div class="dotted-line"></div>
+        </div>
+        <div class="item">
+            <h1>Vitamin K</h1>
+            <p>Membantu <span>mencegah</span> terjadinya <span>osteoporosis</span></p>
+            <div class="dotted-line"></div>
+            </div>
+            <div class="item">
+            <h1>Vitamin B5</h1>
+            <p>Membantu <span>menurunkan</span> tingkat stress, meringankan rasa sakit</p>
+            <div class="dotted-line"></div>
+        </div>
+        <div class="item">
+            <h1>Vitamin B6</h1>
+            <p>Membantu <span>treat diabetes</span>, pendarahan menstruasi, insomnia</p>
+    
+    </div>
+   
+    <table>
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Jenis Alpukat</th>
+                <th>Harga 1 Kg</th>
+                <th>Harga 2 Kg</th>
+                <th>Harga 3 Kg</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Alpukat Mentega</td>
+                <td>Rp. 35.000,-</td>
+                <td>Rp. 65.000,-</td>
+                <td>Rp. 90.000,-</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Alpukat Miki</td>
+                <td>Rp. 50.000,-</td>
+                <td>Rp. 90.000,-</td>
+                <td>Rp. 135.000,-</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Alpukat Aligator</td>
+                <td>Rp. 30.000,-</td>
+                <td>Rp. 55.000,-</td>
+                <td>Rp. 80.000,-</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Alpukat Kendil</td>
+                <td>Rp. 40.000,-</td>
+                <td>Rp. 75.000,-</td>
+                <td>Rp. 100.000,-</td>
+</html>
+</body>
