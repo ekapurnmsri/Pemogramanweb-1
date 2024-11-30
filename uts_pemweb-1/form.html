@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content />
+        <meta name="author" content />
+        <title>TICKET.COM</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Custom Google font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+
+    <body class="d-flex flex-column">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+                <div class="container px-5">
+                    <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">TICKET.COM</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                            <li class="nav-item"><a class="nav-link" href="login.html">login</a></li>
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="tiket.html">Tiket</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="form.html">Form</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Page content-->
+            <section class="py-5">
+                <div class="container px-5">
+                    <!-- Contact form-->
+                    <div class="bg-light rounded-4 py-5 px-4 px-md-5">
+                        <div class="text-center mb-5">
+                            <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 mb-3"><i class="bi bi-envelope"></i></div>
+                            <h1 class="fw-bolder">FORM BOOKING TIKET</h1>
+                            <p class="lead fw-normal text-muted mb-0">Please fill out the form to book your ticket!</p>
+                        </div>
+                        <div class="row gx-5 justify-content-center">
+                            <div class="col-lg-8 col-xl-6">
+                                <form id="contactForm" action="feedback.html">
+                                    <!-- Name input-->
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                        <label for="name">Full name</label>
+                                        <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                                    </div>
+                                    <!-- Email address input-->
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                        <label for="email">Email address</label>
+                                        <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                                        <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                                    </div>
+                                    <!-- Phone number input-->
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                                        <label for="phone">Phone number</label>
+                                        <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                                    </div>
+                                    <!-- Concert selection input-->
+                                    <div class="form-floating mb-3">
+                                        <select class="form-control" id="concert" data-sb-validations="required">
+                                            <option value="">Select a concert...</option>
+                                            <option value="Konser Admin One">Konser Admin One - Rp. 1.300.000</option>
+                                            <option value="Konser ITZY">Konser ITZY - Rp. 1.700.000</option>
+                                            <option value="Konser EM-1977">Konser EM-1977 - Rp. 2.000.000</option>
+                                            <option value="Konser Exemt:Parallel Parking">Konser Exemt:Parallel Parking - Rp. 2.500.000</option>
+                                            <option value="Konser Self Love">Konser Self Love - Rp. 2.900.000</option>
+                                            <option value="Konser Aespa">Konser Aespa - Rp. 6.000.000</option>
+                                            <option value="Konser Taylor Swift">Konser Taylor Swift - Rp. 3.000.000</option>
+                                            <option value="Kizz Concert">Kizz Concert - Rp. 3.900.000</option>
+                                            <option value="Konser Secret Number">Konser Secret Number - Rp. 3.600.000</option>
+                                            <option value="Konser IKON">Konser IKON - Rp. 4.700.000</option>
+                                        </select>
+                                        <label for="concert">Concert</label>
+                                        <div class="invalid-feedback" data-sb-feedback="concert:required">Please select a concert.</div>
+                                    </div>
+
+                                    <!-- Payment Amount input (This will be dynamically updated based on concert selection)-->
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control" id="paymentAmount" type="text" placeholder="Rp. 0" readonly />
+                                        <label for="paymentAmount">Payment Amount</label>
+                                    </div>
+
+                                    <!-- Payment Method input-->
+                                    <div class="form-floating mb-3">
+                                        <select class="form-control" id="paymentMethod" data-sb-validations="required">
+                                            <option value="">Select a payment method...</option>
+                                            <option value="Credit Card">Credit Card</option>
+                                            <option value="Bank Transfer">Bank Transfer</option>
+                                            <option value="PayPal">PayPal</option>
+                                            <option value="Cash on Delivery">Cash on Delivery</option>
+                                        </select>
+                                        <label for="paymentMethod">Payment Method</label>
+                                        <div class="invalid-feedback" data-sb-feedback="paymentMethod:required">Please select a payment method.</div>
+                                    </div>
+
+                                    <!-- Booking Date input-->
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control" id="bookingDate" type="date" data-sb-validations="required" />
+                                        <label for="bookingDate">Booking Date</label>
+                                        <div class="invalid-feedback" data-sb-feedback="bookingDate:required">Please select a booking date.</div>
+                                    </div>
+
+                                    <!-- Address input-->
+                                    <div class="form-floating mb-3">
+                                        <textarea class="form-control" id="address" placeholder="Enter your address..." style="height: 10rem" data-sb-validations="required"></textarea>
+                                        <label for="address">Address</label>
+                                        <div class="invalid-feedback" data-sb-feedback="address:required">Please enter your address.</div>
+                                    </div>
+
+                                    <!-- Submit Button-->
+                                    <div class="d-grid">
+                                        <button class="btn btn-primary btn-lg" id="submitButton" type="submit">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer-->
+        <footer class="bg-white py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0">Copyright &copy; Eka Purnamasari 2024</div></div>
+                    <div class="col-auto">
+                        <a class="small" href="#!">Privacy</a>
+                        <span class="mx-1">&middot;</span>
+                        <a class="small" href="#!">Terms</a>
+                        <span class="mx-1">&middot;</span>
+                        <a class="small" href="#!">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+        <!-- Custom JavaScript -->
+        <script>
+            const concertSelect = document.getElementById("concert");
+            const paymentAmountInput = document.getElementById("paymentAmount");
+
+            const concertPrices = {
+                "Konser Admin One": 1300000,
+                "Konser ITZY": 1700000,
+                "Konser EM-1977": 2000000,
+                "Konser Exemt:Parallel Parking": 2500000,
+                "Konser Self Love": 2900000,
+                "Konser Aespa": 6000000,
+                "Konser Taylor Swift": 3000000,
+                "Kizz Concert": 3900000,
+                "Konser Secret Number": 3600000,
+                "Konser IKON": 4700000
+            };
+
+            concertSelect.addEventListener("change", function () {
+                const selectedConcert = concertSelect.value;
+                if (selectedConcert && concertPrices[selectedConcert]) {
+                    paymentAmountInput.value = `Rp. ${concertPrices[selectedConcert].toLocaleString()}`;
+                } else {
+                    paymentAmountInput.value = "Rp. 0";
+                }
+            });
+        </script>
+    </body>
+</html>
