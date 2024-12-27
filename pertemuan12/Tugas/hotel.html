@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="bg-primary text-white text-center py-5">
+        <h1>Hotel Bintang 5</h1>
+        <p class="lead">perusahaan jasa hotel/penginapan.</p>
+        <img src="img/hotel4.jpg" alt="Gambar Header" class="img-fluid rounded">
+    </header>
+
+    <!-- Navigation (Breadcrumb) -->
+    <nav aria-label="breadcrumb" class="my-3">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+        </ol>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        <!-- Image Slider -->
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/hotel2.jpeg" class="d-block w-100" alt="Slide 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/hotel1.jpeg" class="d-block w-100" alt="Slide 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/hotel3.webp" class="d-block w-100" alt="Slide 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- Daftar Cabang -->
+        <section class="my-5">
+            <h2 class="text-center">Daftar Cabang</h2>
+            <br>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <h3>Hote Ke indahan Laut Nya</h3>
+                        <div class="card-body">
+                            <h5 class="card-title">Cabang 1 ada di bali</h5>
+                            <img src="img/hotel2.jpeg" alt="Contoh Gambar" width="300" height="200">
+                            <p class="card-text">Alamat jl. Denpasar No.35</p>
+                            <!-- Link ke Google Maps -->
+    <p>
+        Klik <a href="https://maps.app.goo.gl/kkAFxGsi8h5u1omM9" target="_blank">di sini</a> untuk melihat lokasi kami di Google Maps.
+    </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <h3>Hotel Ada Kolam Renang</h3>
+                        <div class="card-body">
+                            <h5 class="card-title">Cabang 2  ada di bandung</h5>
+                            <img src="img/hotel2.jpeg" alt="Contoh Gambar" width="300" height="200">
+                            <p class="card-text">Alamat jl. Sudirman No.13</p>
+                            <!-- Link ke Google Maps -->
+    <p>
+        Klik <a href="https://maps.app.goo.gl/C5T2mhawmesQKQaQA" target="_blank">di sini</a> untuk melihat lokasi kami di Google Maps.
+    </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <h3>Hotel Tertinggi Di Jakarta</h3>
+                        <div class="card-body">
+                            <h5 class="card-title">Cabang 3 ada di jakarta</h5>
+                            <img src="img/hotel3.webp" alt="Contoh Gambar" width="300" height="200">
+                            <p class="card-text">Alamat jl. Tol pondok No.59</p>
+                            <!-- Link ke Google Maps -->
+    <p>
+        Klik <a href="https://maps.app.goo.gl/1m94nfrrhdCgE7AbA" target="_blank">di sini</a> untuk melihat lokasi kami di Google Maps.
+    </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulir Kontak -->
+        <section class="my-5">
+            <h2 class="text-center">Hubungi Kami</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nama</label>
+                    <input type="text" class="form-control" id="name" placeholder="Nama Anda">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Email Anda">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Pesan</label>
+                    <textarea class="form-control" id="message" rows="3" placeholder="Pesan Anda"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Kirim</button>
+            </form>
+        </section>
+
+        <!-- Tabel Daftar Harga -->
+        <section class="my-5">
+            <h2 class="text-center">Daftar Harga</h2>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Layanan</th>
+                        <th>Harga</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Kamar Standar</td>
+                        <td>Rp 500,000</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Kamar Deluxe</td>
+                        <td>Rp 1,000,000</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Kamar Mewah</td>
+                        <td>Rp 2,000,000</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Kamar Biasa</td>
+                        <td>Rp 300,000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
